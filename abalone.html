@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Abalone age prediction</h2>
+
+<form action = "http://127.0.0.1:5000/prediction" method = 'POST'>
+  <label>Length:</label><br>
+  <input type="text" id="length" name="length" ><br>
+  <label>Diameter:</label><br>
+  <input type="text" id="diameter" name="diameter"><br>
+  <labe>Height:</label><br>
+  <input type="text" id="height" name="height"><br>  
+  <label>Whole Weight:</label><br>
+  <input type="text" id="wholeweight" name="wholeweight"><br>
+  <label>Shucked weight:</label><br>
+  <input type="text" id="shuckedweight" name="shuckedweight"><br>
+  <label>Viscera weight:</label><br>
+  <input type="text" id="Visceraweight" name="Visceraweight"><br>
+  <label>Shell weight:</label><br>
+  <input type="text" id="shellweight" name="shellweight"><br>
+  <label>Sex:</label><br>
+  <input list="sex" name="sex">
+  <datalist id="sex">
+    <option value="M">
+    <option value="F">
+    <option value="I">
+  </datalist>
+  <input type="submit">
+ </form>
+
+<p>Note that the predictions are just for reference.</p>
+{{ output }}
+
+</body>
+</html>
