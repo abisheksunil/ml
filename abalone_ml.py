@@ -26,6 +26,5 @@ pickle.dump(knn, open('model.pkl', 'wb'))
 mod = pickle.load(open('model.pkl', 'rb'))
 print(mod.predict([[0.454,0.342, 0.0564, 0.434,0.2231,0.16,0.213,0,0,1]]))
     
-#a = knn.predict([[request.form['Length'],request.form['diameter'], request.form['height'], request.form['wholeweight'],request.form['shuckedweight'],request.form['Visceraweight'],c,e,r]])
 
         
